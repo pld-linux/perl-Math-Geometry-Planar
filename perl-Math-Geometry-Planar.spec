@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define		pdir	Math
-%define		pnam	Geometry-Planar
+%define	pdir	Math
+%define	pnam	Geometry-Planar
 Summary:	Math::Geometry::Planar - a collection of planar geometry functions
 Summary(pl):	Math::Geometry::Planar - zestaw funkcji do geometrii na p³aszczy¼nie
 Name:		perl-Math-Geometry-Planar
