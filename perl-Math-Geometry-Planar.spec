@@ -9,13 +9,13 @@ Summary:	Math::Geometry::Planar - A collection of planar geometry functions
 Summary(pl):	Math::Geometry::Planar - zestaw funkcji do geometrii na p³aszczy¼nie
 Name:		perl-Math-Geometry-Planar
 Version:	1.09
-Release:	1
+Release:	2
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl-Math-Geometry-GPC >= 1.03
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	perl-Math-Geometry-GPC >= 1.03
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -33,7 +33,8 @@ odcinkach. U¿ywa modu³u GPC do obcinania wielok±tów.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %{!?_without_tests:%{__make} test}
@@ -50,6 +51,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%dir %{perl_sitelib}/Math/Geometry
-%{perl_sitelib}/Math/Geometry/Planar.pm
+%dir %{perl_vendorlib}/Math/Geometry
+%{perl_vendorlib}/Math/Geometry/Planar.pm
 %{_mandir}/man3/*
