@@ -8,12 +8,12 @@
 Summary:	Math::Geometry::Planar - a collection of planar geometry functions
 Summary(pl):	Math::Geometry::Planar - zestaw funkcji do geometrii na p³aszczy¼nie
 Name:		perl-Math-Geometry-Planar
-Version:	1.12
-Release:	2
+Version:	1.14
+Release:	1
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	80091f17fc747dde12ce46fd0abafca4
+# Source0-md5:	bd0dcc151a49a5d692994366c55abc92
 BuildRequires:	perl-devel >= 1:5.8.0
 %if %{with tests}
 BuildRequires:	perl-Math-Geometry-Planar-GPC >= 1.04
