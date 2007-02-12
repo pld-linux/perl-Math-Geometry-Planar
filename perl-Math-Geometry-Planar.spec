@@ -6,7 +6,7 @@
 %define		pdir	Math
 %define		pnam	Geometry-Planar
 Summary:	Math::Geometry::Planar - a collection of planar geometry functions
-Summary(pl):	Math::Geometry::Planar - zestaw funkcji do geometrii na p³aszczy¼nie
+Summary(pl.UTF-8):   Math::Geometry::Planar - zestaw funkcji do geometrii na pÅ‚aszczyÅºnie
 Name:		perl-Math-Geometry-Planar
 Version:	1.14
 Release:	1
@@ -30,9 +30,9 @@ This module provides a set of 2D polygon, line and line segment
 operations. The module also uses the GPC module for polygon clipping
 operaions.
 
-%description -l pl
-Ten modu³ udostêpnia zestaw operacji na wielok±tach 2D, liniach i
-odcinkach. U¿ywa modu³u GPC do obcinania wielok±tów.
+%description -l pl.UTF-8
+Ten moduÅ‚ udostÄ™pnia zestaw operacji na wielokÄ…tach 2D, liniach i
+odcinkach. UÅ¼ywa moduÅ‚u GPC do obcinania wielokÄ…tÃ³w.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
