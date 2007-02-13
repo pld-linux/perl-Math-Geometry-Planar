@@ -6,7 +6,7 @@
 %define		pdir	Math
 %define		pnam	Geometry-Planar
 Summary:	Math::Geometry::Planar - a collection of planar geometry functions
-Summary(pl.UTF-8):   Math::Geometry::Planar - zestaw funkcji do geometrii na płaszczyźnie
+Summary(pl.UTF-8):	Math::Geometry::Planar - zestaw funkcji do geometrii na płaszczyźnie
 Name:		perl-Math-Geometry-Planar
 Version:	1.14
 Release:	1
