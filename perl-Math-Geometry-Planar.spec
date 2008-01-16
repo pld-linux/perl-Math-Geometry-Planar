@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_without	tests	# do not perform "make test"
+%bcond_with	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Math
@@ -9,7 +9,7 @@ Summary:	Math::Geometry::Planar - a collection of planar geometry functions
 Summary(pl.UTF-8):	Math::Geometry::Planar - zestaw funkcji do geometrii na płaszczyźnie
 Name:		perl-Math-Geometry-Planar
 Version:	1.14
-Release:	2
+Release:	3
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -21,7 +21,8 @@ BuildRequires:	perl-Math-Geometry-Planar-Offset >= 1.00
 %endif
 BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	perl-Math-Geometry-Planar-GPC >= 1.04
-Requires:	perl-Math-Geometry-Planar-Offset >= 1.00
+# loop
+#Requires:	perl-Math-Geometry-Planar-Offset >= 1.00
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
