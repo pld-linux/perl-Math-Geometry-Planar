@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_with	tests	# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Math
 %define		pnam	Geometry-Planar
 Summary:	Math::Geometry::Planar - a collection of planar geometry functions
